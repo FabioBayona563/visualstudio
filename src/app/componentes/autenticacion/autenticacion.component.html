@@ -1,0 +1,43 @@
+<router-outlet></router-outlet>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<!------ Include the above in your HEAD tag ---------->
+
+
+<div class="w3-container w3-black w3-center w3-allerta">
+  <p class="w3-xxxlarge">INGRESO</p>
+</div>
+
+<div class="wrapper fadeInDown">
+<div id="formContent">
+
+  <form (submit)="llamar()">
+    <!--<div class="form-group text-center">-->
+
+      <h3>Ingrese su usuario</h3>
+    <!--</div>-->
+    <div class="fadeIn second">
+    <!--<label>Nombre :</label>-->  
+      <input type="text" id="usuario" class="fadeIn second" name="usuario" placeholder="usuario" [(ngModel)]="usuario">
+      <input type="password" id="contraseña" class="fadeIn second" name="contraseña" placeholder="contraseña" [(ngModel)]="contrasena">
+    <!--  <input class="form-control" type="text" name="usuario" placeholder="usuario" [(ngModel)]="usuario">-->
+    </div>
+    <!--<div class="fadeIn second">
+      <label>Contraseña :</label>
+      <input class="form-control" type="password" name="contraseña" placeholder="contraseña " [(ngModel)]="contrasena">
+    </div>
+   <input type="submit" name="accion" value="Ingresar"/>--> 
+  </form>
+  <!--<button type="button" class="fadeIn fourth" (click)="ingresar()">ingresar</button>
+  <button type="button" class="fadeIn fourth" (click)="salir()">Volver</button>-->
+  <p></p>
+  <input type="submit" class="fadeIn fourth" (click)="ingresar()"  value="Ingresar">
+  <input type="button" class="fadeIn fourth" (click)="salir()"  value="Volver">
+</div>
+
+</div>
+

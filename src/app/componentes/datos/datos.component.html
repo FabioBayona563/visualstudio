@@ -1,0 +1,33 @@
+<div class="container col-lg-3">
+
+    <div class="form-group text-center">
+
+      <p><strong>Bievenido</strong>
+      </p>
+    </div>
+    <div class="form-group">
+      
+  <button type="button" class="btn btn-primary" (click)="salir()">Salir</button>
+
+  <p-table >
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Ciudad</th>
+            <th>Fecha</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-datos>
+        <tr>
+            <td>{{datos.id}}</td>
+            <td>{{datos.nombre}}</td>
+            <td>{{datos.ciudad}}</td>
+            <td>{{datos.fecha}}</td>
+        </tr>
+    </ng-template>
+  </p-table>
+  
+  </div>
+  
+</div>

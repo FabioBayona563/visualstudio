@@ -1,0 +1,54 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<!------ Include the above in your HEAD tag ---------->
+
+
+<div class="w3-container w3-black w3-center w3-allerta">
+  <p class="w3-xxxlarge">Tabla de torneos disponibles</p>
+</div>
+
+    
+    <!-- Tabs Titles -->
+    
+    <!-- Icon 
+    
+    <h3><strong>Lista de torneos</strong></h3>-->
+      
+    
+    <!-- Login Form -->
+    <p-table [value]='entradas'>
+      <ng-template pTemplate="header">
+          <tr>
+              <th>Id</th>
+              <th>Nombre</th>
+              <th>Ciudad</th>
+              <th>Fecha Inicio torneo</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-datos>
+          <tr>
+              <td>{{datos.id}}</td>
+              <td>{{datos.nombre}}</td>
+              <td>{{datos.ciudad}}</td>
+              <td>{{datos.fecha}}</td>
+          </tr>
+      </ng-template>
+    </p-table>
+    
+    
+      
+    <div class="wrapper fadeInDown">
+
+  
+  <form (submit)="volverAd()">
+    <input type="submit" class="fadeIn fourth" name="accion" value="Volver">
+  </form>
+ 
+  <div id="formContent">
+    </div>
+</div>
+

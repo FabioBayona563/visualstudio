@@ -1,0 +1,47 @@
+
+<router-outlet></router-outlet>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var txt = "Gestor de torneos - pagina principal";
+  var espera = 100;
+  var refresca = null;
+
+  function titulo()
+  {
+    document.title = txt;
+
+    txt = txt.substring(1,txt.length)+txt.charAt(0);
+    refresca = setTimeout("titulo()",espera);
+  }
+  titulo(); 
+</script>
+<!------ Include the above in your HEAD tag ---------->
+
+<h1 align="center"><FONT FACE="times new roman">Texto de prueba 12345 con tipo TIMES NEW ROMAN</FONT></h1>
+
+<p>> sdasa</p>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    
+    <!-- Tabs Titles -->
+    
+    <!-- Icon -->
+    
+    
+    <!-- Login Form -->
+    <form (submit)="boton()">
+
+      <input type="submit" class="fadeIn fourth" name="accion"  value="Ingresar como administrador">
+      <input type="submit" class="fadeIn fourth" name="accion"  value="Registrar mi equipo">
+      <input type="submit" class="fadeIn fourth" name="accion"  value="Ver los equipos registrados">
+      <input type="submit" class="fadeIn fourth" name="accion"  value="Ver fechas de partidos">
+      <input type="submit" class="fadeIn fourth" name="accion"  value="Ver torneos">
+      <input type="submit" class="fadeIn fourth" name="accion"  value="prueba de compilacion">
+    </form>
+    
+ 
+  </div>
+  
+</div>
